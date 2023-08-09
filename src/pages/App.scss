@@ -1,0 +1,147 @@
+.App{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6fa;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 495px;
+    height: 575px;
+    margin: 100px 0px 0px 0px;
+    background-color: #ffff;
+    img{
+    width: 495px;
+    height: 128px;
+    }
+    
+    
+    .imagem {
+        background-image: url('../../public/assets/images/carro1.png');
+        height: 128px;
+        width: 495px;
+
+        h1 {
+            color: #fff;
+            background-color: #111111BD;
+            width: 90px;
+            height: 40px;
+            display: flex;
+            margin: 80px 0px 0px 10px;
+        }
+    }
+
+
+}
+.textos{
+    
+display: flex;
+flex-direction: column;
+padding: 20px ;
+
+        h1{
+            color: #646464;
+            font-size: 18px;
+        }
+
+    .inpuut{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #c5bc4d;
+        padding: 5px;
+        justify-content: space-between;
+        align-items: center;
+        width: 423px;
+        height: 45px;
+        color:#c5bc4d ;
+
+        .tikao{
+            display: flex;
+            flex-direction: column;
+
+            input {
+                border: none;
+                outline: none;
+            }
+        }
+
+        img{
+            width: 19.49px;
+            height: 18px;
+            
+        }
+
+        
+    }
+
+
+
+}
+
+thead  > tr{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    padding: 0px 20px;
+
+    th
+    {
+        color: #c5bc4d;
+    }
+}
+
+tbody{
+ 
+    
+
+    tr{ 
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    
+    padding: 0px 20px;
+    }
+}
+
+tbody > tr:hover{
+
+    color: #fff;
+    background-color: #c5bc4d;
+    border-radius: 30px;
+    box-shadow: 5px #696969;
+}
+
+#kyan{
+    width: 400px;
+}
+
+.lista {
+    overflow: auto;
+    height: 250px;
+    line-height: 40px;
+}
+
+.lista::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.lista::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.lista::-webkit-scrollbar-thumb {
+    background-color: #c5bc4d;
+    border-radius: 20px;
+}
+   #derek{
+    color: #000;
+   }
+}
