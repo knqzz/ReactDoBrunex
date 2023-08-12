@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Cabecalho from '../components/cabecalho';
+import Cabecalho from '../../components/cabecalho';
 import './App.scss';
 import axios from 'axios';
 
