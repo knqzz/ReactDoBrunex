@@ -7,7 +7,7 @@
         flex-direction: column;
         align-items: center;
         background: linear-gradient( to right, rgba(154, 153, 198, 1), rgba(198, 153, 178, 1));
-        height: 917px;
+        height: 100%;
     }    
 
     .cabecalho {
@@ -34,10 +34,9 @@
         }
     }
 
-        .lista {
-            display: flex;
-            flex-direction: row;
-        }
+
+        
+
 
         .card-pokemon{
             display: flex;
@@ -48,6 +47,7 @@
             border-radius: 15px;
             align-items: center;
             gap: 15px;
+            
             padding: 30px 0px 0px 0px;
 
 
@@ -58,7 +58,7 @@
                 display: flex;
                 align-items: center;
                 border-radius: 100px;
-                padding: 0px 0px 0px 0px;
+
             }
 
             img {

@@ -12,14 +12,16 @@ export default function Pokemon() {
 
         let response = await axios.get(url);
         
+
         let listaPokemons = [];
         
+
         for (let item of response.data.results) {
             let pokemonResp = await axios.get(item.url);
 
             let imagem = pokemonResp.data.sprites.other['official-artwork'].front_default;
 
-            let tipos = '';
+            let tipos = 'Tipo: ';
             for 
             (let t of pokemonResp.data.types) {
                 tipos = tipos + t.type.name + ",";
@@ -29,6 +31,7 @@ export default function Pokemon() {
                 nome: item.name,
                 imagem: imagem,
                 tipos: tipos
+
             })
         }
 
@@ -48,15 +51,17 @@ export default function Pokemon() {
                 <div className='Lista'>
 
                     {pokemons.map(item =>
-                        
-                        <div className='card-pokemon'>
-                            <div className='imagem'>
-                            <img src={item.imagem} />
+
+                        <div className='td'> 
+                            <div className='card-pokemon'>
+                                <div className='imagem'>
+                                <img src={item.imagem} />
+                                </div>
+                                <h1> {item.nome} </h1>
+                                <p> {item.tipos} </p>
                             </div>
-                            <h1> {item.nome} </h1>
-                            <p> {item.tipos} </p>
                         </div>
-                        
+
                         )}
 
                 </div>
